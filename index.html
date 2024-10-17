@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="images" class="logo"> -->
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <i class="fas fa-solid fa-square-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, Im <span>Asna</span><br />From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About Me -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profilebw.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="para">
+                A highly motivated and enthusiastic MERN Stack Developer. Developing and maintaining web applications. Skilled in developing responsive web applications using the MERN stack, including JavaScript, MongoDB, Express.js, React.js, and Node.js
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web Application using Mern</li>
+                <li><span>Front End Design</span><br />Reactjs,HTML,CSS</li>
+                <li><span>Nodejs</span><br />JavaScript,Express,MVC,MongoDB,GIT</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Web Developer</span><br />Dastute Switcher Technologies
+                </li>
+                <li><span>Mern Developer</span><br />Intern</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Mern Stack Development</span><br />2022-2024</li>
+                <li><span>Bsc Computer Science</span><br />University of Calicut</li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/images/ecommerce.png" alt="" />
+            <div class="layer">
+              <h3>Ecommerce WebApplication</h3>
+              <p>
+                Implemented all the e-commerce functionalities like wishlists Userprofiles,category wise product listing and user Cart.
+                On the admin side, admin can manage products, categories and users Admin can Block and Unblock users.
+                Payment gateway integrated using RazorPay & COD User sessions can help enhance the security of the application .Nodemailer used for email OTP verification.
+                
+              </p>
+              <a href="https://github.com/Asna-cp/SofaWorld"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/Todolist.png" alt="" />
+            <div class="layer">
+              <h3>Todolist</h3>
+              <p>
+             Todolist using Reactjs and javascript.
+             We can Add remove edit the list
+              </p>
+              <a href="https://github.com/Asna-cp/ToDo-App"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/doctor.png" alt="" />
+            <div class="layer">
+              <h3>Dental Clinic</h3>
+              <p>
+                The project was implemented by using a MERN stack with a REST API
+Developed a secure login system using JWT authentication and password hashing.This project has a patient and Admin side. Patients can pre-book their appointments and can see all treatments, doctors and facilities available in the hospital.
+                
+              </p>
+              <a href="https://github.com/Asna-cp/DentiCare-Client"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+
+    <!--Portfolio End-->
+        <!--Services-->
+        <div id="services">
+            <div class="container">
+              <h1 class="sub-title">My Services</h1>
+              <div class="services-list">
+                <div>
+                  <h2>Web Design</h2>
+                  <p>
+                   Web Design Using Reactjs,HTML and Css
+                  </p>
+                  <a href="#">learn more</a>
+                </div>
+               
+                <div>
+                  <h2>Web Development</h2>
+                  <p>
+                  Web Development Using Mern Stack
+                  </p>
+                  <a href="#">learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Services End-->
+
+    <!--Contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i
+              >cpasnaasn@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>8987675453</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/asnacp/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://github.com/Asna-cp"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ Asna.Made with<i class="fa-solid fa-heart"></i>by easy
+          Tutorials
+        </p>
+      </div>
+    </div>
+    <!--Contact End-->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-links");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sideMenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sideMenu.style.right = "0";
+      }
+      function closemenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
